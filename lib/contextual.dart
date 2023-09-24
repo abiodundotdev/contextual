@@ -1,7 +1,11 @@
 library contextual;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'package:flutter/widgets.dart';
+
+extension XNavigation on BuildContext {
+  NavigatorState get navigation => Navigator.of(this);
+}
+
+extension XMediaQuery on BuildContext {
+  MediaQueryData get mediaQuery => MediaQuery.of(this);
 }
