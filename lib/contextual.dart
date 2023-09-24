@@ -26,3 +26,11 @@ extension XTheme on BuildContext {
 extension XScaffold on BuildContext {
   ScaffoldState get scaffold => Scaffold.of(this);
 }
+
+extension XWidget<T extends Widget> on BuildContext {
+  Widget? get widget => findAncestorWidgetOfExactType<T>();
+}
+
+extension XState<T extends State> on BuildContext {
+  State? get state => findAncestorStateOfType<T>();
+}
