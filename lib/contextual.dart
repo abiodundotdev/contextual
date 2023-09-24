@@ -2,8 +2,8 @@ library contextual;
 
 import 'package:flutter/material.dart';
 
-extension XNavigation on BuildContext {
-  NavigatorState get navigation => Navigator.of(this);
+extension XNavigator on BuildContext {
+  NavigatorState get navigator => Navigator.of(this);
 }
 
 extension XMediaQuery on BuildContext {
@@ -33,4 +33,8 @@ extension XWidget<T extends Widget> on BuildContext {
 
 extension XState<T extends State> on BuildContext {
   State? get state => findAncestorStateOfType<T>();
+}
+
+extension XFocusNode on BuildContext {
+  FocusNode focus({bool scopeOk = false}) => Focus.of(this, scopeOk: scopeOk);
 }
