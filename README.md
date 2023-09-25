@@ -54,17 +54,17 @@ class _AppState extends State<App> {
     <tbody>
         <tr>
             <td><code>context.mediaQuery</code></td>
-            <td>MediaQuery.of(this)</td>
+            <td>MediaQuery.of(context)</td>
             <td>Get the nearest media query</td>
         </tr>
           <tr>
             <td><code>context.size</code></td>
-            <td>MediaQuery.of(this).size</td>
+            <td>MediaQuery.of(context).size</td>
             <td>Returns the current screen size</td>
         </tr>
          <tr>
             <td><code>context.mediaQuery</code></td>
-            <td>MediaQuery.of(this)</td>
+            <td>MediaQuery.of(context)</td>
             <td>Get the nearest media query</td>
         </tr>
         </tbody>
