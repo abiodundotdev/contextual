@@ -72,18 +72,29 @@ import 'package:contextual/contextual.dart';
 
 ## 🎮 How To Use
 
-## Validation rules in a list, short form without label or custom messages
 
-## Validation rules in a list with label or custom messages
 ```dart
- TextFormField(
-        validator : ['required','max:10','uppercase',].validate(attribute: 'Username',
-        customMessages: {
-            'required': "You must input your username",
-            'max': "The length must be 10",
-             'uppercase': "Only uppercase is allowed"
-            },
-    ),
+import 'package:contextual/contextual.dart';
+import 'package:flutter/material.dart';
+
+
+ class App extends StatefulWidget {
+  const App({super.key});
+
+  @override
+  State<App> createState() => _AppState();
+}
+
+class _AppState extends State<App> {
+  @override
+  Widget build(BuildContext context) {
+    final screenSize = context.screenSize;
+    final mediaQuery = context.mediaQuery;
+
+    return Container();
+  }
+}
+
 ```
 
 ## Widgets, properties and its corresponding contextual property
