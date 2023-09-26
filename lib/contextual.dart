@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 extension XNavigator on BuildContext {
   NavigatorState get navigator => Navigator.of(this);
+  NavigatorState get navigate => Navigator.of(this);
 }
 
 extension XMediaQuery on BuildContext {
@@ -61,4 +62,24 @@ extension XModalRoute on BuildContext {
 
 extension XOverlay on BuildContext {
   OverlayState get overlay => Overlay.of(this);
+}
+
+extension XNavigatorState on NavigatorState {
+  Future<dynamic> to<T extends Object?>(Widget page) async {
+    return push(MaterialPageRoute<T>(builder: (_) => page));
+  }
+
+  Future<dynamic> toNamed<T extends Object?>(String routeName,
+      {Object? arguments}) async {
+    return pushNamed(routeName, arguments: arguments);
+  }
+
+  Future<dynamic> back<T extends Object?>([T? result]) async {
+    return pop(result);
+  }
+
+  Future<dynamic> backUntil<T extends Object?>(
+      bool Function(Route<dynamic>) predicate) async {
+    return popUntil(predicate);
+  }
 }

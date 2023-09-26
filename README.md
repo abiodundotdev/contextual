@@ -21,7 +21,6 @@ import 'package:contextual/contextual.dart';
 import 'package:contextual/contextual.dart';
 import 'package:flutter/material.dart';
 
-
  class App extends StatefulWidget {
   const App({super.key});
 
