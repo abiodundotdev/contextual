@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
       supportedLocales: [
-        // Locale('en'), // English
+        Locale('en'), // English
         Locale('es'), // Spanish
         Locale('de'), // germany
       ],
