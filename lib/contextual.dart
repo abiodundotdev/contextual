@@ -35,6 +35,15 @@ extension XScaffold on BuildContext {
   ScaffoldState get scaffold => Scaffold.of(this);
 }
 
+extension XScaffoldMessengerState on BuildContext {
+  ScaffoldMessengerState get scaffoldMessenger => ScaffoldMessenger.of(this);
+
+  ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showSnackBar(
+      SnackBar snackBar) {
+    return scaffoldMessenger.showSnackBar(snackBar);
+  }
+}
+
 extension XWidget<T extends Widget> on BuildContext {
   T? get widget => findAncestorWidgetOfExactType<T>();
 }
