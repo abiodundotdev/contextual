@@ -75,10 +75,3 @@ class _AppState extends State<App> {
 If you encounter any problems feel free to open an issue. If you feel the library is
 missing a feature, please raise a ticket on Github and I'll look into it.
 Pull request are also welcome.
-
-
-## 🐛 Bugs/Requests
-
-If you encounter any problems feel free to open an issue. If you feel the library is
-missing a feature, please raise a ticket on Github and I'll look into it.
-Pull request are also welcome.
