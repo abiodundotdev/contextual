@@ -36,7 +36,6 @@ class _AppState extends State<App> {
     return Container();
   }
 }
-
 ```
 
 ## Widgets, properties and its corresponding contextual property
@@ -104,6 +103,11 @@ class _AppState extends State<App> {
             <td><code>context.form</code></td>
             <td>Form.of(context)</td>
             <td>Get the nearest form widget</td>
+        </tr>
+         <tr>
+            <td><code>context.defaultTextStyle</code></td>
+            <td>DefaultTextStyle.of(context)</td>
+            <td>Get the nearest DefaultTextStyle</td>
         </tr>
         </tbody>
   </table>

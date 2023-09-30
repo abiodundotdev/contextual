@@ -28,6 +28,9 @@ extension XNavigationRailThemeData on BuildContext {
 }
 
 extension XTheme on BuildContext {
+  ///
+  ///
+  ///
   ThemeData get theme => Theme.of(this);
 }
 
