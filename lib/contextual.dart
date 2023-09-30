@@ -42,6 +42,11 @@ extension XScaffoldMessengerState on BuildContext {
       SnackBar snackBar) {
     return scaffoldMessenger.showSnackBar(snackBar);
   }
+
+  ScaffoldFeatureController<MaterialBanner, MaterialBannerClosedReason>
+      showMaterialBanner(MaterialBanner materialBanner) {
+    return scaffoldMessenger.showMaterialBanner(materialBanner);
+  }
 }
 
 extension XWidget<T extends Widget> on BuildContext {
