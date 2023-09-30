@@ -97,13 +97,13 @@ class _AppState extends State<App> {
   }
 }
 
-class CustomShapeGestureRecognizer extends GestureRecognizer {
-  @override
-  void acceptGesture(int pointer) {}
+// class CustomShapeGestureRecognizer extends GestureRecognizer {
+//   @override
+//   void acceptGesture(int pointer) {}
 
-  @override
-  String get debugDescription => runtimeType.toString();
+//   @override
+//   String get debugDescription => runtimeType.toString();
 
-  @override
-  void rejectGesture(int pointer) {}
-}
+//   @override
+//   void rejectGesture(int pointer) {}
+// }
