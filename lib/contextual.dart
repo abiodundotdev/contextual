@@ -49,12 +49,12 @@ extension XScaffoldMessengerState on BuildContext {
   }
 }
 
-extension XWidget<T extends Widget> on BuildContext {
-  T? get widget => findAncestorWidgetOfExactType<T>();
+extension XWidget on BuildContext {
+  T? widget<T extends Widget>() => findAncestorWidgetOfExactType<T>();
 }
 
-extension XState<T extends State> on BuildContext {
-  T? get state => findAncestorStateOfType<T>();
+extension XState on BuildContext {
+  T? state<T extends State>() => findAncestorStateOfType<T>();
 }
 
 extension XRenderObject<T extends RenderObject> on BuildContext {
