@@ -79,20 +79,20 @@ extension XOverlay on BuildContext {
 }
 
 extension XNavigatorState on NavigatorState {
-  Future<dynamic> to<T extends Object?>(Widget page) async {
+  Future<T?> to<T extends Object?>(Widget page) async {
     return push(MaterialPageRoute<T>(builder: (_) => page));
   }
 
-  Future<dynamic> toNamed<T extends Object?>(String routeName,
+  Future<T?> toNamed<T extends Object?>(String routeName,
       {Object? arguments}) async {
     return pushNamed(routeName, arguments: arguments);
   }
 
-  Future<dynamic> back<T extends Object?>([T? result]) async {
+  void back<T extends Object?>([T? result]) async {
     return pop(result);
   }
 
-  Future<dynamic> backUntil<T extends Object?>(
+  void backUntil<T extends Object?>(
       bool Function(Route<dynamic>) predicate) async {
     return popUntil(predicate);
   }

@@ -50,24 +50,34 @@ class _AppState extends State<App> {
       </tr>
     </thead>
     <tbody>
-        <tr>
+          <tr>
             <td><code>context.mediaQuery</code></td>
             <td>MediaQuery.of(context)</td>
             <td>Returns the mediaquerydata for nearest Mediaquery</td>
-        </tr>
+          </tr>
           <tr>
             <td><code>context.size</code></td>
             <td>MediaQuery.of(context).size</td>
             <td>Returns the current screen size</td>
-        </tr>
-         <tr>
-            <td><code>context.mediaQuery</code></td>
-            <td>MediaQuery.of(context)</td>
-            <td>Get the nearest media query</td>
-        </tr>
+          </tr>
+          <tr>
+            <td><code>context.theme</code></td>
+            <td>Theme.of(context)</td>
+            <td>Get the nearest theme</td>
+          </tr>
+          <tr>
+            <td><code>context.navigator</code></td>
+            <td>Navigator.of(context)</td>
+            <td>Returns the nearest Navigator</td>
+          </tr>
+          <tr>
+            <td><code>context.navigate.to(Widget page)</code></td>
+            <td>Navigator.of(context).push</td>
+            <td>Navigates to the page argument</td>
+          </tr>
          <tr>
             <td><code>context.showSnackBar(SnackBar snackBar)</code></td>
-            <td> ScaffoldMessenger.of(this).showSnackBar()</td>
+            <td>ScaffoldMessenger.of(this).showSnackBar()</td>
             <td>Show snackbar</td>
         </tr>
          <tr>
@@ -83,17 +93,12 @@ class _AppState extends State<App> {
         <tr>
             <td><code>context.focus</code></td>
             <td>Focus.of(context)</td>
-            <td>Get the nearest for a Focus widget FocusNode</td>
+            <td>Get the nearest Focus widget FocusNode</td>
         </tr>
         <tr>
             <td><code>context.overlay</code></td>
             <td>Overlay.of(context) || Navigator.of(context).overlay</td>
             <td>Get the nearest overlay</td>
-        </tr>
-        <tr>
-            <td><code>context.form</code></td>
-            <td>Form.of(context)</td>
-            <td>Get the nearest form widget</td>
         </tr>
         <tr>
             <td><code>context.form</code></td>
